@@ -1,0 +1,425 @@
+.container {
+    width: auto;
+    height: 990px;
+}
+#divBackground {
+    z-index: -1;
+    height: 990px;
+    background:url(/day9-11/Background.png) no-repeat;
+    text-align: center;
+}
+
+#divBackground #bigtext {
+    font-size: 54px;
+    padding-top: 150px;
+    font-weight: 200;
+    color: rgb(240, 218, 218);
+    margin-bottom: 60px;
+}
+#divBackground #smalltext {
+    width: 680px;
+    font-size: 18px;
+    margin: auto;
+    color: rgb(184, 182, 182);
+}
+#account-container {
+    width: 830px;
+    height: 210px;
+    border: 1px solid rgb(107, 106, 106);
+    margin: auto;
+    margin-top: 80px;
+}
+#account-container #text1 {
+    color: rgb(241, 240, 240);
+    font-size: 18px;
+    margin-top: 40px;
+}
+#account-container #text2 {
+    color: rgb(121, 119, 119);
+    font-size: 14px;
+    margin-top: 10px;
+}
+ul,li { 
+    padding: 0;
+    margin: 0;
+    list-style: none
+}
+
+#helloworld input[type=text] {
+    width: 260px;
+    height: 40px;
+    border: 1px solid rgb(75, 74, 74);
+    font-size: 15px;
+    background-color: transparent;
+    margin-top: 30px;
+    margin-left: 47px;
+}
+.msg {
+    float: left;
+}
+#helloworld button{
+    width: 100px;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+#readymade {
+    height: 650px;
+    width: auto;
+}
+#readymade #daxie,
+#readymade #xiaoxie {
+    text-align: center;   
+}
+#readymade #daxie {
+    margin-top: 60px;
+    font-size: 15px;
+    
+}
+#readymade #xiaoxie {
+    margin-left: 350px;
+    width: 700px;
+    margin-top: 20px;
+    font-size: 40px;
+    color: rgb(17, 17, 17);
+    font-weight: 200;
+    margin-bottom: 70px;
+}
+.readymade-container {
+    width: 810px;
+    height: 350px;
+    margin: auto;
+}
+.up-container,
+.down-container {
+    width: 100%;
+    height: 50%;
+}
+.up-container #mobile,
+.up-container #accessiblity,
+.down-container #fluid,
+.down-container #customization {
+    float: left;
+    width: 45%;
+    height: 100%;
+    position: relative;
+    margin-right: 40px;
+}
+
+.readymade-container img {
+    float: left;
+    margin: auto;
+
+}
+#mobile div,
+#accessiblity div,
+#fluid div,
+#customization div {
+    margin-left: 70px;
+}
+.readymade-container .title {
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+.readymade-container .explain {
+    font-size: 14px;
+    color: grey;
+}
+#supportive {
+    height: 650px;
+    width: auto;
+    overflow: hidden;
+}
+#background3 {
+    background:url(/day9-11/Background3.png) no-repeat;
+    z-index: -1;
+    height: 650px;
+}
+#supportive .left,
+#supportive .right {
+    float: left;
+    width: 50%;
+    height: 650px;
+    position: relative;
+}
+#supportive .left {
+    width: 60%;
+}
+#supportive .right {
+    width: 40%;
+}
+#supportive .ipad {
+    position: absolute;
+    width: 120%;
+    margin-top: 90px;
+    margin-left: 60px;
+    z-index: 1;
+}
+#supportive .screen {
+    position: absolute;
+    width: 102%;
+    margin-top: 116px;
+    margin-left: 109px;
+    z-index: 2;
+}
+#supportive .left {
+    text-align: left;   /*文字左对齐*/
+}
+#supportive #up {
+    font-size: 30px;
+    font-weight: 200;
+    width: 280px;
+    margin-left: 280px;
+    padding-top: 100px;
+    color: white;
+}
+#supportive #middle {
+    width: 320px;
+    margin-top: 30px;
+    margin-left: 280px;
+    color: rgb(156, 154, 154);
+}
+#supportive #down {
+    width: 800px;
+    height: 90px;
+    margin-left: 280px;
+    margin-top: 50px;
+}
+#supportive button {
+    width: 200px;
+    height: 50px;
+    float: left;
+    margin-right: 30px;
+    background-color: transparent;
+    border: 1px solid gray;
+    color: white;
+}
+#supportive #on {
+    background-color: white;
+    color: black;
+}
+#products {
+    height: 400px;
+    width: auto;
+}
+#products #up {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 200;
+    margin-top: 80px;
+}
+#products #down {
+    text-align: center;
+    width: 900px;
+    height: 200px;
+    margin: auto;
+}
+#products #left,
+#products #middle,
+#products #right {
+    margin-top: 50px;
+    width: 33%;
+    float: left;
+}
+#products .wenzi {
+    font-size: 15px;
+    width: 250px;
+    margin: auto;
+    margin-top: 20px;
+    color: rgb(146, 145, 145);
+}
+#xiantiao {
+    height: 1px;
+    width:100%;
+    margin:0px auto;
+    padding:0px;
+    background-color:#D5D5D5;
+}
+#content {
+    height: 600px;
+    width: 100%;
+}
+#content #up,
+#content #down {
+    width: auto;
+    height: 50%;
+}
+#content #up {
+    margin-top: 100px;
+}
+#content #down {
+    margin-top: 0px;
+}
+#content .container {
+    width: 400px;
+    height: auto;
+}
+#content img {
+    width: 400px;
+}
+#content #tree {
+    width: 400px;
+    height: auto;
+    float: left;
+    margin-left: 300px;
+}
+#content #bird {
+    float: right;
+    margin-right: 23%;
+}
+#content .right1 {
+    float: left;
+    margin-left: 6%;
+    margin-top: 30px;
+}
+#content .right2 {
+    float: left;
+    margin-left: 300px;
+    margin-top: 30px;
+}
+#content .da {
+    width: 240px;
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: 300px;
+}
+#content .xiao {
+    width: 300px;
+    font-size: 13px;
+    font-weight: 200px;
+    color: rgb(150, 149, 149);
+}
+#crew {
+    width: 960px;
+    height: 800px;
+    margin: auto;
+    text-align: center;
+}
+#crew #da {
+    position: relative;
+    top: 50px;
+    font-size: 25px;
+    font-weight: 300;
+}
+#crew #xiao {
+    width: 500px;
+    font-size: 13px;
+    font-weight: 200;
+    color: rgb(150, 149, 149);
+    margin: auto;
+    position: relative;
+    top: 70px;
+}
+#crew #picture-container {
+    margin-top: 120px;
+}
+#crew img {
+    width: 350px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+#contacts {
+    height: 500px;
+}
+#contacts-container {
+    width: 960px;
+    height: 500px;
+    margin: auto;
+    position: relative;
+}
+#contacts #left {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+#contacts #right {
+    float: right;
+    width: 43%;
+    height: 100%;
+}
+#contacts #wenzi {
+    margin-top: 20px;
+}
+#contacts #message {
+    border: 1px solid rgb(165, 164, 164);
+    width: 350px;
+    height: 420px;
+    margin: 40px auto; 
+    text-align: center;
+}
+#contacts .shuru,
+#contacts button {
+    width: 280px;
+    height: 50px;
+    margin-top: 20px;
+    border: 1px solid rgb(167, 165, 165);
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+#contacts .xinxi {
+    width: 280px;
+    height: 100px;
+    margin-top: 20px;
+    border: 1px solid rgb(172, 170, 170);
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+#contacts button {
+    background-color: black;
+    color: white;
+}
+#contacts #text1 {
+    font-size: 30px;
+    font-weight: 200;
+    margin-top: 80px;
+}
+#contacts #text2 {
+    font-size: 14px;
+    width: 350px;
+    margin-top: 20px;
+    color: gray;
+}
+#contacts .connection {
+    width: 250px;
+    height: 30px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.connection #suokuan {
+    width: 200px;
+    height: 40px;
+    background-color: gray;
+    float: left;
+    margin-left: 40px;
+    vertical-align: middle;
+}
+.connection img {
+    float: left;
+    margin-right: 20px;
+
+}
+#footer {
+    height: 300px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+}
+#footer #container {
+    width: 1000px;
+    height: 300px;
+    margin: auto;
+}
+#footer .liang {
+    color: white;
+}
+#footer .part {
+    width: 25%;
+    height: 100%;
+    float: left;
+    color: rgb(88, 88, 88);
+    margin-top: 30px;
+    line-height: 35px;
+}
+
