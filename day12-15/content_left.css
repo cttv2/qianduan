@@ -1,0 +1,140 @@
+.content .box {
+    width: 360px;
+    height: 100px;
+    border-bottom: 1px solid rgb(229, 232, 238);
+    border-right: 1px solid rgb(229, 232, 238);
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+.content .on_1 {
+    border-left: 3px solid rgb(35, 153, 241);
+}
+  
+.content input {
+    width: 280px;
+    height: 35px;
+    border: 1px solid rgb(229, 232, 238);
+    border-radius: 4px;
+    background: url("/day12-15/12_15-assets/Search\ icon.png") no-repeat 265px;
+    padding-left: 10px;
+    font-size: 14px;
+    color: rgba(159, 169, 186, 0.8);
+}
+.content .content_1 {
+    /* height: 80px; */
+    /* width: 359px; */
+    border-bottom: 1px solid rgb(229, 232, 238);
+    border-right: 1px solid rgb(229, 232, 238);
+    text-align: center;  
+    line-height: 80px;
+    box-sizing: border-box;
+}
+.content .up {
+    height: 50%;
+    width: 100%;
+}
+.content img,
+.content .na_me,
+.content .time {
+    float: left;
+}
+.content img {
+    width: 10%;
+    height: 75%;
+    margin-top: 8px;
+    margin-right: 10px;
+}
+.content .na_me {
+    width: 50%;
+    height: 100%;
+    /* background-color: violet; */
+    /* margin-top: 20px; */
+}
+.content .time {
+    font-size: 14px;
+    color: rgb(127, 143, 164);
+    text-align: right;
+    width: 30%;
+    height: 100%;
+    /* background-color: turquoise; */
+    line-height: 50px;
+}
+.na_me .first {
+    font-size: 15px;
+    color: rgb(88, 93, 104);
+    line-height: 1.2;
+    margin-top: 10px;
+}  
+.na_me .on {
+    font-size: 15px;
+    color: rgb(35, 153, 241);
+    line-height: 1.2;
+    margin-top: 10px;
+}  
+  
+.na_me .second {
+    font-size: 12px;
+    color: rgb(181, 181, 181);
+    line-height: 1.2;
+    
+} 
+.content .down {
+    width: 96%;
+    font-size: 10px;
+    font-family: "Myriad Pro";
+    color: rgb(88, 93, 104);
+    line-height: 1.357;
+    margin-top: 5px;
+}
+.content .down_count {
+    width: 86%;
+    /* background-color: turquoise; */
+    float: left;
+}
+.content #blue_count {
+    border-radius: 50%;
+    background-image: -webkit-linear-gradient( 90deg, rgb(25,145,235) 0%, rgb(46,161,248) 100%);
+    margin-top: 10px;
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+    float: right;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    /* vertical-align: middle; */
+}
+/* .Base {
+    border-radius: 50%;
+    background-image: -moz-linear-gradient( 90deg, rgb(25,145,235) 0%, rgb(46,161,248) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(25,145,235) 0%, rgb(46,161,248) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(25,145,235) 0%, rgb(46,161,248) 100%);
+    position: absolute;
+    left: 705px;
+    top: 229px;
+    width: 24px;
+    height: 24px;
+    z-index: 115;
+  } 
+  ._4 {
+  font-size: 14px;
+  font-family: "ProximaNova";
+  color: rgb(255, 255, 255);
+  line-height: 2.571;
+  text-align: left;
+  position: absolute;
+  left: 712.937px;
+  top: 223.003px;
+  z-index: 116;
+}
+*/
+  
+
+
+  
+
+
+  
+  
+  

@@ -1,0 +1,262 @@
+.content .content_2 {
+    height: 81px;
+    /* width: 359px; */
+    border-bottom: 1px solid rgb(229, 232, 238);
+    /* text-align: center;  
+    line-height: 80px; */
+    box-sizing: border-box;
+    /* line-height: 81px; */
+    /* vertical-align: middle; */
+}
+.content_2 .content_2_container {
+    width: 100%;
+    height: 40px;
+    /* background-color: burlywood; */
+    line-height: 81px;
+}
+.content_2_container .content_2_name {
+    width: 110px;
+    font-size: 18px;
+    color: rgb(88, 93, 104);
+    margin-left: 20px;
+    /* line-height: 1.2; */
+    /* background-color: brown; */
+    /* text-align: left; */
+    float: left;
+}
+.content_2_container #content_2_lvdian_container {
+    /* width: calc(100% - 120px); */
+    height: 81px;
+    /* line-height: 80px; */
+    /* background-color: rgb(64, 203, 207); */
+    float: left;
+    /* border-radius: 50%; */
+}
+.content_2_container .content_2_lvdian {
+    border-radius: 50%;
+    background-color: rgb(27, 185, 52);
+    width: 8px;
+    height: 8px;
+    margin-left: 5px;
+    float: left;
+    position: relative;
+    top: 50%; /*偏移*/
+    transform: translateY(-50%);/*这三行使元素垂直居中*/
+}
+  
+.content_2_container .content_2_icon {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(230, 233, 236);
+    border-radius: 4px;
+    background-image: -moz-linear-gradient( 90deg, rgb(241,243,247) 0%, rgb(255,255,255) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(241,243,247) 0%, rgb(255,255,255) 100%);
+    margin-top: 20px;
+    float: right;
+    width: 113px;
+    height: 35px;
+    overflow: auto;
+    position: relative;
+  }
+  .content_2_icon .divider_1 {
+    background-color: rgb(230, 233, 236);
+    width: 1px;
+    height: 35px;
+    margin-left: 33.3%;
+    position: absolute;
+    float: left;
+  }
+  .content_2_icon .divider_2 {
+    background-color: rgb(230, 233, 236);
+    width: 1px;
+    height: 35px;
+    margin-left: 66.6%;
+    position: absolute;
+    /* float: left; */
+  }
+.divider_3 {
+    background-color: rgb(230, 233, 236);
+    width: 1px;
+    height: 35px;
+    float: right;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    /* margin-left: 66.6%; */
+    /* position: absolute; */
+    /* float: left; */
+  }
+  .content_2_icon img {
+      width: 16px !important;
+      height: 16px !important;
+      margin-left: 11px;
+      margin-top: 10px;
+  }
+ 
+  
+.content_2_container button {
+    width: 40px;
+    height: 40px;
+    margin: 0px;
+    padding: 0;
+    border: 1px solid black; 
+    border-radius: 8px; 
+    outline: none; 
+}
+.content_2_ico .icon_1 {
+    /* border-right: 1px solid grey; */
+    /* width: 20px; */
+}
+.content_2_container .number {
+    float: right;
+    margin-right: 20px;
+    color: rgb(88, 93, 104);
+    font-size: 16px;
+}
+.content_2_container .content_2_arrows {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(230, 233, 236);
+    border-radius: 4px;
+    background-image: -moz-linear-gradient( 90deg, rgb(241,243,247) 0%, rgb(255,255,255) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(241,243,247) 0%, rgb(255,255,255) 100%);
+    width: 70px;
+    height: 35px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 30px;
+    position: relative;
+}
+.content_2_arrows .divider_1 {
+    background-color: rgb(230, 233, 236);
+    width: 1px;
+    height: 36px;
+    margin-left: 50%;
+    position: absolute;
+    float: left;
+  }
+  .content_2_arrows img {
+    width: 6px !important;
+    height: 10px !important;
+    /* text-align: center; */
+    margin-left: 16px;
+    margin-top: 13px;
+}
+.content .right_box {
+    height: 250px;
+    /* border-bottom: 1px solid rgb(229, 232, 238); */
+    padding: 20px;
+    overflow: auto;
+}
+.content .right_box_up {
+    height: 40%;
+    width: 100%;
+}
+.content .right_box_down {
+    height: 60%;
+    width: 100%;
+    /* background-color: burlywood; */
+}
+.right_box .img_1 {
+    height: 40px;
+    width: 40px;
+    /* background-color: blueviolet; */
+    float: left;
+    /* margin: 20px; */
+}
+.right_box_up .right_content {
+    height: 40px;
+    width: 100%;
+    /* overflow: auto; */
+}
+.right_box_up .right_info,
+.right_box_down .right_info {
+    overflow: auto;
+    /* background-color: brown; */
+    height: 20px;
+    padding-top: 5px;
+    /* margin-top: 10px; */
+}
+.right_box_up .right_name,
+.right_box_down .right_name {
+    float: left;
+    margin-right: 20px;
+    /* margin-top: 10px; */
+    font-size: 15px;
+    color: rgb(88, 93, 104);
+}
+.right_box_up .right_time,
+.right_box_down .right_time {
+    float: left;
+    font-size: 14px;
+    color: rgb(127, 143, 164);
+}
+.right_box_up .right_details,
+.right_box_down .right_details {
+    /* float: left; */
+    /* background-color: burlywood; */
+    font-size: 12px;
+    color: rgb(88, 93, 104);
+    line-height: 1.357;
+    margin-top: 5px;
+    overflow: auto;
+}
+.right_box_down .right_photo {
+    width: 400px;
+    /* height: 200px; */
+}
+.sigma-content{
+    /* margin: 50px; */
+    text-align: center;
+    background-color: #fff;
+}
+.sigma-middle-line:before{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: rgb(229, 232, 238);/*颜色需与主题大背景色一致*/ 
+    position: relative;
+    top: 10px;/*调节线高*/
+    left: 0;
+}
+.sigma-middle-line-blue:before{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: rgb(175, 213, 241);/*颜色需与主题大背景色一致*/ 
+    position: relative;
+    top: 15px;/*调节线高*/
+    left: 0;
+}
+.sigma-line-text{
+    display: inline-block;
+    color: rgb(147, 160, 179);
+    background: #fff;
+    padding: 0 18px 0 18px;
+    position: relative;
+    font-size: 13px;
+    font-weight: 500;
+}
+.sigma-line-text-blue {
+    display: inline-block;
+    color: rgb(137, 197, 240);
+    background: #fff;
+    padding: 0 18px 0 18px;
+    position: relative;
+    font-size: 13px;
+    font-weight: 500;
+}
+/* .New_Messages {
+    font-size: 14px;
+    font-family: "ProximaNova";
+    color: rgb(35, 153, 241);
+    line-height: 1.357;
+    text-align: right;
+    position: absolute;
+    left: 1116.938px;
+    top: 839.751px;
+    z-index: 227;
+  } */
+  

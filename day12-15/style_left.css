@@ -1,0 +1,117 @@
+html {
+    height: 100%;
+    min-height: 500px;
+}
+#container {
+    overflow: auto;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    min-height: 500px;
+}
+.left {
+    float: left;
+    
+    width: 100px;
+    height: 100%;
+    background-color: #1d2531;
+}
+.middle {
+    float: left;
+    width: 250px;
+    height: 100%;
+    background-color: #222c3c;
+    overflow: hidden;
+}
+.right .header {
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+}
+.right .content {
+    height: calc(100% - 70px);
+    width: 100%;
+    margin-top: 70px;
+}
+.right {
+    overflow: auto;
+    height: 100%;
+}
+.content #left {
+    width: 360px;
+    height: 100%;
+    float: left;
+    /* background-color: lightcoral; */
+    overflow: hidden;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar {/*隐藏滚轮*/
+    display: none;
+}
+
+.content #right {
+    height: 100%;
+    float: right;
+    width: calc(100% - 360px);
+    overflow: hidden;
+    overflow-y: scroll;
+    /* background-color: limegreen; */
+}
+.circle {
+    position: fixed;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+#circle_1 {
+    background-image: -webkit-linear-gradient( 90deg, rgb(25,145,235) 0%, rgb(46,161,248) 100%);
+    margin-top: 20px;
+}
+#circle_2 {
+    background: -webkit-linear-gradient( 90deg, rgb(127,91,230) 0%, rgb(157,143,227) 100%);
+    margin-top: 100px;
+}
+#circle_3 {
+    background: -webkit-linear-gradient( -90deg, rgb(244,84,56) 0%, rgb(203,39,10) 100%);
+    margin-top: 180px;
+}
+#circle_4 {
+    margin-top: 260px;
+}
+.left #circle1 {
+    margin-left: 18px;
+    margin-top: 18px;
+}
+.left #circle2 {
+    margin-left: 17px;
+    margin-top: 12px;
+}
+.left #circle3 {
+    margin-left: 14px;
+    margin-top: 15px;
+}
+.left #grid,
+.left #settings {
+    float: left;
+    position: fixed;
+    bottom: 20px;
+}
+.left #grid {
+    left: 25px;
+}
+.left #settings {
+    left: 60px;
+}
+.left #on {
+    border-radius: 50%;
+    background-image: radial-gradient(closest-side at 80% 80%, rgb(35, 143, 225) 5%, #1d2531 100%);
+    position: absolute;
+    left: -16px;
+    top: 33px;
+    width: 23px;
+    height: 23px;
+}
+

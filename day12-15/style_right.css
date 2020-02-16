@@ -1,0 +1,64 @@
+.messages {
+    font-size: 24px;
+    color: rgb(53, 64, 82);
+    line-height: 1.2;
+    float: left; 
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+  .self-photo {
+      float: right;
+      width: 250px;
+      height: 70px;
+  }
+  .self-photo img,
+  .self-photo #middle {
+      float: left;
+  }
+  .self-photo #touxiang {
+      position: fixed;
+      top: 10px;
+      right: 190px;
+  }
+  .self-photo #middle {
+      position: fixed;
+      height: 70px;
+      right: 70px;
+      display: table;
+      width: 100px;
+  }
+  .self-photo #jiantou {
+      position: fixed;
+      top: 30px;
+      right: 30px;
+  }
+  .jordan {
+    font-size: 16px;
+    color: rgb(35, 153, 241);
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    right: 20px;
+    top: 16px;
+  }
+  .admin {
+    font-size: 14px;
+    color: rgb(181, 181, 181);
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    right: 2px;
+    top: 40px;
+  }
+  .right .xiantiao {
+    height: 1px;
+    width: 100%;
+    margin-top: 70px;
+    position: fixed;
+    /* margin:20px auto; */
+    /* padding:0px; */
+    background-color: rgb(229, 232, 238);
+    /* overflow:hidden; */
+}
+  
+  
