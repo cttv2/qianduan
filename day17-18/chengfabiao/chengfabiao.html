@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function chengfabiao(num){
+    var i,j;
+    var myarr=new Array();
+    var bg='<table>';
+    for(i=0;i<num;i++){
+        bg += '<tr>'
+        myarr[i] = new Array();
+        for(j=0;j<i+1;j++){
+            myarr[i][j]=(j+1)*(i+1);
+            bg += '<td>' + myarr[i][j] + '</td>';
+        }
+        bg += '</td>';
+    }
+    bg += '</table>';
+    document.write(bg);
+}
+
+chengfabiao(9);
+
+</script>
+</html>
