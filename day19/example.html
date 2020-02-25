@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>IFE ECMAScript</title>
+</head>
+<body>        
+    <div id="wrapper">
+        <div id="news-top" class="section">
+            <h3>Some title</h3>
+            <div class="content">
+                <ul>
+                    <li><span>HTML</span><a href="">Some Link1</a></li>
+                    <li><span>JS</span><a class="active" href="">Some Link2</a></li>
+                    <li><span>CSS</span><a href="">Some Link3</a></li>
+                    <li><span>JS</span><a href="">Some Link4</a></li>
+                </ul>
+            </div>
+            <img src="">
+            <p class="">Some Text</p>
+        </div>
+        <div id="news-normal" class="section">
+            <h3>Some title</h3>
+            <div class="content">
+                <ul>
+                    <li><span>HTML</span><a href="">Some Link1</a></li>
+                    <li><span>HTML</span><a href="">Some Link2</a></li>
+                    <li><span>JS</span><a class="active" href="#">Some Link3</a></li>
+                    <li><span>CSS</span><a href="">Some Link4</a></li>
+                </ul>
+            </div>
+            <img src="">
+            <p class="" id="hhh">Some Text</p>
+        </div>      
+    </div>
+    <script>
+
+    function getAllListItem() {
+        // 返回页面中所有li标签
+        var list = document.getElementsByTagName('li');
+        console.log(list.length);
+        for(var i=0;i<list.length;i++){
+            console.log(list[i].innerHTML);
+        }
+        
+        // var temp = [];
+        // for (var i=0;i<list.length;i++){
+        //     temp.push(list[i].innerHTML);
+        // }
+        //alert(temp);
+        //document.getElementById('hhh').innerHTML = list[1].innerHTML;
+    }
+
+    function findAllHtmlSpanInOneSection(sectionId) {
+        // 返回某个section下所有span中内容为HTML的span标签
+        let span = document.getElementsByTagName('span');
+        let temp = [];
+        for(var i=0;i<span.length;i++){
+            temp.push(span[i].innerText);
+        }
+        //console.log(temp);
+        for(var j=0;j<temp.length;j++) {
+            if(j<4 && temp[j]=='HTML' && sectionId=='news-top') {
+                console.log('这是news-top里面的：',span[j]);
+            }
+            else if(j>=4 && temp[j]=='HTML' && sectionId=='news-normal') {
+                console.log('这是news-normal里面的：',span[j]);  
+            }
+        }
+    }
+
+findAllHtmlSpanInOneSection('news-normal');
+
+    function findListItem(sectionId, spanCont) {
+        // 返回某个section下，所有所包含span内容为spanCont的LI标签
+        let span = document.getElementsByTagName('span');
+        let temp = [];
+        for(var i=0;i<span.length;i++){
+            temp.push(span[i].innerText);
+        }
+        for(var j=0;j<span.length;j++){
+            if(j<4 && temp[j]===spanCont && sectionId=='news-top') {
+                console.log('这是'+ sectionId + '里面的span的内容为'+ spanCont +'的父元素' ,span[j].parentNode);
+            }
+            if(j>=4 && temp[j]===spanCont && sectionId=='news-normal') {
+                console.log('这是'+ sectionId + '里面的span的内容为'+ spanCont +'的父元素' ,span[j].parentNode);
+            }
+        }    
+    }
+findListItem('news-top','JS');
+
+
+    function getActiveLinkContent(sectionId) {
+        // 返回某个section下，class为active的链接中包含的文字内容
+        let a = document.getElementsByTagName('a');
+        console.log(a);
+        let temp=[];
+        for(var i=0;i<a.length;i++) {
+            if(a[i].className == 'active') {
+                temp.push(a[i].innerHTML);
+                console.log(temp);
+            }
+        }
+        for(var j=0;j<a.length;j++) {
+            if(j<4 && a[j].className=='active' && sectionId=='news-top') {
+                console.log('这是'+ sectionId + '中class为active的链接中包含的文字内容'+ a[j].innerText);
+            }
+            if(j>=4 && a[j].className=='active' && sectionId=='news-normal') {
+                console.log('这是'+ sectionId + '中class为active的链接中包含的文字内容'+ a[j].innerText);
+            }
+
+        }
+    }
+getActiveLinkContent('news-normal');
+    </script>
+</body>
+</html>

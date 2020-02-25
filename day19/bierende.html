@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>IFE ECMAScript</title>
+</head>
+<body>
+<div id="wrapper">
+    <div id="news-top" class="section">
+        <h3>Some title</h3>
+        <div class="content">
+            <ul>
+                <li><span>HTML</span><a href="">Some Link1</a></li>
+                <li><span>JS</span><a class="active" href="">Some Link2</a></li>
+                <li><span>CSS</span><a href="">Some Link3</a></li>
+                <li><span>JS</span><a href="">Some Link4</a></li>
+            </ul>
+        </div>
+        <img src="">
+        <p class="">Some Text</p>
+    </div>
+    <div id="news-normal" class="section">
+        <h3>Some title</h3>
+        <div class="content">
+            <ul>
+                <li><span>HTML</span><a href="">Some Link1</a></li>
+                <li><span>HTML</span><a href="">Some Link2</a></li>
+                <li><span>JS</span><a class="active" href="#">Some Link3</a></li>
+                <li><span>CSS</span><a href="">Some Link4</a></li>
+            </ul>
+        </div>
+        <img src="">
+        <p class="">Some Text</p>
+    </div>
+</div>
+<script type="text/javascript">
+
+    function getAllListItem() {
+        // 返回页面中所有li标签
+        let li = document.getElementsByTagName("li");
+        //console.log(li);
+    }
+    getAllListItem();
+
+    function findAllHtmlSpanInOneSection(sectionId) {
+        // 返回某个section下所有span中内容为HTML的span标签
+        let span = document.getElementsByTagName("span");
+        console.log(span);
+        let html= [];
+        for (var i = 0; i < span.length; i++) {
+            let sp = span[i];
+            html.push(sp.innerText);
+        }
+        //console.log(html)
+       for (var r =0 ; r < html.length;r++) {
+           let hl = html[r];
+           if (r < 3 & hl =="HTML" & sectionId == 'news-top'){
+               console.log('这是news-top里面的：', span[r]);
+           }
+           if (r >= 3 & hl =='HTML' & sectionId == 'news-normal') {
+               console.log('这是news-normal里面的：', span[r]);
+           }
+        }
+
+
+    }
+    findAllHtmlSpanInOneSection("news-normal");
+
+    function findListItem(sectionId, spanCont) {
+        // 返回某个section下，所有所包含span内容为spanCont的LI标签
+        let span = document.getElementsByTagName("span");
+        console.log(span);
+        let html= [];
+        for (var i = 0; i < span.length; i++) {
+            let sp = span[i];
+            html.push(sp.innerText);
+        }
+        //console.log(html)
+        for (var r =0 ; r < html.length;r++) {
+            let hl = html[r];
+            if (r < 3 & hl == spanCont & sectionId == 'news-top'){
+                console.log('这是'+ sectionId + '里面的span的内容为'+ spanCont +'的父元素' ,span[r].parentNode);
+            }
+            if (r >= 3 & hl == spanCont & sectionId == 'news-normal') {
+                console.log('这是'+ sectionId + '里面的span的内容为'+ spanCont +'的父元素' ,span[r].parentNode);
+            }
+        }
+    }
+    let spanCont = "JS";
+    findListItem("news-top", spanCont);
+
+
+    function getActiveLinkContent(sectionId) {
+        // 返回某个section下，class为active的链接中包含的文字内容
+        let a = document.getElementsByTagName("a");
+        console.log(a);
+        let html= [];
+        let aT;
+        for (var i = 0; i < a.length; i++) {
+            aT = a[i];
+            if (aT.className == 'active') {
+                html.push(aT.innerHTML);
+                console.log(html)
+            }
+        }
+        //console.log(html)
+        for (var r =0 ; r < html.length;r++) {
+            let hl = html[r];
+            if (r < 1 & sectionId == 'news-top'){
+                console.log('这是'+ sectionId + '里面的span的内容为'+ spanCont +'的父元素' ,html[r]);
+            }
+            if (r > 0 & sectionId == 'news-normal') {
+                console.log('这是class为active的链接中包含的文字内容', html[r]);
+            }
+        }
+    }
+
+    getActiveLinkContent("news-normal")
+
+</script>
+</body>
+</html>

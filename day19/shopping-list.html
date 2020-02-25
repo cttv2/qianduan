@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Shopping list example</title>
+    <style>
+      li {
+        margin-bottom: 10px;
+      }
+
+      li button {
+        font-size: 8px;
+        margin-left: 20px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>My shopping list</h1>
+
+    <div>
+      <label for="item">Enter a new item:</label>
+      <input type="text" name="item" id="item">
+      <button>Add item</button>
+    </div>
+
+    <ul>
+
+    </ul>
+
+    <script>
+        var ul = document.querySelector('ul');
+        var input = document.querySelector('input');
+        var button = document.querySelector('button');
+        button.onclick = function () {
+            var cunchu = input.value;//获取存储框的当前值并存储在变量中
+            input.value = '';//变量值置空
+            var li = document.createElement('li');
+            var span = document.createElement('span');
+            var listButton = document.createElement('button');
+            li.appendChild(span);
+            li.appendChild(listButton);
+            span.textContent = cunchu;
+            listButton.textContent = 'Delete';
+            ul.appendChild(li);
+            listButton.onclick = function(){
+                ul.removeChild(li);
+            }
+            input.focus();
+
+        }
+    </script>
+  </body>
+</html>
